@@ -1,24 +1,29 @@
 #import random 
 import random
-print("Hello Player")
 
-#Ask for user input 
-user_input = input(str("Enter D to output random number from Dice "))
-
-#while loop (infinite)
-while True:
+def dice(user_input):
     if user_input == "d":
-        #generate a random integer
-        random_dice = random.randint(1,6)
-        print(random_dice)
-        break
+            #generate a random integer
+            random_dice = random.randint(1,6)
+            print(random_dice)
+            return 0; 
+    else:
+         return -1; 
+          
+
+         
+          
             
-    if user_input == "d":
-        #generate a random integer
-        random_integer = random.randint(1, 6)
-        #print generated float
-        print(random_integer) 
-        if user_input =="e":
-            print("ending game..")
-            break
+    
+
+print("Hello Player")
+while True:
+    user_input = input(str("Enter D to output random number from Dice "))
+    system_output = dice(user_input)
+    print(system_output)
+
+
+
+
+
 
